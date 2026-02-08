@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pineapple Bill Calculator</title>
+</head>
+<body>
+
+  <h2>Pineapple Bill Calculator</h2>
+
+  <form action="bill.php" method="POST">
+
+    <label>Enter the number of pineapple:</label>
+    <input type="number" name="quantity" required min="0">
+    <br><br>
+
+    <label>Home Delivery:</label>
+    <input type="radio" name="hd" value="yes" required> Yes
+    <input type="radio" name="hd" value="no" required> No
+    <br><br>
+
+    <label>Address:</label>
+    <select name="address" required>
+      <option value="">Select Address</option>
+      <option value="dhk">Dhaka</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label>Tip:</label>
+    <input type="number" name="tip" required min="0">
+    <br><br>
+
+    <button type="submit">Calculate Bill</button>
+
+  </form>
+
+</body>
+</html>
