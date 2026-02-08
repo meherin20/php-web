@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UIU Tech Fest Budget</title>
+</head>
+<body>
+
+  <h2>UIU Tech Fest Budget</h2>
+
+  <form action="techFest.php" method="POST">
+      
+    <label>Attendees:</label>
+    <input type="number" name="attendees" required min="1">
+    <br><br>
+
+    <label>Cost per Person : </label>
+    <input type="number" name="costPerPerson" required min="0">
+    <br><br>
+
+    <label>Venue Capacity : </label>
+    <input type="number" name="venueCapacity" required min="1">
+    <br><br>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+</body>
+</html>
